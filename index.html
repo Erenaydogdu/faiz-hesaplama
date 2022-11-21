@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <legend>KREDİ HESAPLAMA FORMU</legend>
+        <fieldset>
+            <table>
+                <tr>
+                    <td>
+                        <label for="txtKrediTutari">Çekilecek kredi tutarını giriniz:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="txtKrediTutari">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="listeVade">Vade seçiniz:</label>
+                    </td>
+                    <td>
+                        <select name="" id="listeVade">
+                            <option value="12">12 ay</option>
+                            <option value="24">24 ay</option>
+                            <option value="36">36 ay</option>
+                            <option value="48">48 ay</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Hesapla" onclick="krediHesapla()">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><h3 id="sonuc"></h3></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
